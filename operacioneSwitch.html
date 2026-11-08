@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones con Switch</title>
+</head>
+<body>
+    <h1>Operaciones con SWITCH</h1>
+
+    <script>
+        let operacion = Number(prompt(
+            "Selecciona una operación:\n1. Suma\n2. Resta\n3. Multiplicación\n4. División"
+        ));
+
+        let N1 = Number(prompt("Introduce el primer número"));
+        let N2 = Number(prompt("Introduce el segundo número"));
+
+        switch (operacion) {
+            case 1:
+                let suma = N1 + N2;
+                document.write("La suma es: " + suma);
+                break;
+
+            case 2:
+                let resta = N1 - N2;
+                document.write("La resta es: " + resta);
+                break;
+
+            case 3:
+                let multiplicacion = N1 * N2;
+                document.write("La multiplicación es: " + multiplicacion);
+                break;
+
+            case 4:
+                if (N2 != 0) {
+                    let division = N1 / N2;
+                    document.write("La división es: " + division);
+                } else {
+                    document.write("No se puede dividir entre cero.");
+                }
+                break;
+
+            default:
+                document.write("Operación no válida");
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

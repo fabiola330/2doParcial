@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>innerHTML</h1>
+    <p id="mensaje">Hola mundo</p>
+   
+    <script>
+        document.getElementById("mensaje").innerHTML="¡Bienvenido!";
+    </script>
+
+    <div id="imagen"></div>
+    <script>
+        document.getElementById("imagen").innerHTML=' <img src="aridante_.jpg" alt="Aristoteles y Dante">';
+    </script>
+
+    <h1>document.getElementById</h1>
+    <p id="aviso">Mensaje inicial</p>
+    <script>
+        var elemento = document.getElementById("aviso");
+        elemento.textContent="Hola Estudiantes";
+    </script>
+
+    <button id="btn">Haz clic</button>
+    <script>
+        document.getElementById("btn").style.backgroundColor="lightblue";
+    </script>
+
+    <h1>querySelector</h1>
+    <p class="destacado">Texto destacado</p>
+    <script>
+        document.querySelector(".destacado").style.color="red";
+    </script>
+    <button class="btn">Enviar</button>
+    <script>
+        document.querySelector(".btn").disabled=true;
+    </script>
+</body>
+</html>
